@@ -1,0 +1,212 @@
+/*base*/
+
+body{
+    margin: auto;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5em;
+    color: #d3deff;
+    background-image: url(../images/marioTown.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+body ul{
+    display:flex;
+    text-decoration: none;
+}
+body li{
+    display:flex;
+    text-decoration: none;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    cursor:pointer;
+    
+}
+
+#navbar li:hover{
+    background-color:#0938b9ec;
+   
+}
+
+#navbar {
+    
+    display: flex;
+    justify-content: flex-end;
+    background-color: #3fb1a1;
+
+}
+#navbar a{
+    
+    text-decoration: none;
+
+}
+.navbutton {
+
+    border-radius: 0.5rem;
+    background-color: #007bff;
+    padding-bottom:2.5rem;
+    padding-top: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+    color: white;
+    margin-right: 2rem;
+    text-align: center;
+    height: 2.5rem;
+ 
+}
+.logout{
+ 
+    border-radius: 0.5rem;
+    background-color: #f13050;
+    padding-bottom:2.5rem;
+    padding-top: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+    color: white;
+    margin-right: 2rem;
+    text-align: center;
+    height: 2.5rem;
+}
+#footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 36em;
+    background-color: #3fb1a1;
+    background-image: "../images/hasher.jpg";
+    
+}
+
+.homepage-title{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3.5em;
+    color: white;
+    text-align: center;
+    margin-top: 0.6em;
+		background-size: 100%;
+		margin-bottom: 4.5rem;
+   
+}
+/*fin de base */
+
+/*page signin */
+
+#signin-form{
+    box-shadow: 10px 5px 20px #aaa;
+    padding: 20px 20px 20px 20px;
+    width: 30rem;
+    border-top: 0.1rem solid #3fb1a1;
+    border-bottom: 0.1rem solid #3fb1a1;
+    border-right: 0.1rem solid #3fb1a1;
+    border-left: 0.1rem solid #3fb1a1;
+    margin-top: 3rem;
+}
+.form-title {
+  color:white;
+  font-size:2.5rem;
+ 
+}
+#inputUsername{
+ width: 25rem;
+ margin-top: 2rem;
+}
+
+#inputPassword{
+    width: 25rem;
+    margin-top: 2rem;
+}
+#btn-signin{
+    margin-top: 1rem;
+}
+#btn-signup{
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+#buttons-loginForm{
+display: flex;
+justify-content: space-between;
+}
+
+
+/*fin de page signin */
+
+/*page signup */
+.signup-form{
+    display: flex;
+    
+    box-shadow: 10px 5px 20px #aaa;
+    padding: 20px 20px 20px 20px;
+    width: 23rem;
+    border-top: 0.1rem solid #3fb1a1;
+    border-bottom: 0.1rem solid #3fb1a1;
+    border-right: 0.1rem solid #3fb1a1;
+    border-left: 0.1rem solid #3fb1a1;
+    margin-top: 3rem;
+    color:white;
+}
+#buttons-form{
+  margin-top: 1rem;
+  display:flex;
+  justify-content: space-around;
+  margin-right: 3rem;
+}
+
+/*fin de page signup */
+/*homepage*/
+.card-gif{
+	height: 250px;
+	width: 250px;
+	margin-top: 2rem;
+	margin-left: 2rem;
+
+}
+.card-collection{
+	margin-top: 3rem;
+}
+/*fin de homepage*/
+
+/* logged normal user*/
+/*gif management*/
+#gifManagerContainer{
+	text-align: center;
+	margin-top: 4rem;
+	background-image: url(../images/hasher.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+
+	color:black;
+	border-radius: 50px;
+}
+#drop_file_zone {
+	background-color: #EEE; 
+	border: #999 5px dashed;
+	width: 100%; 
+	height: 200px;
+	padding: 8px;
+	font-size: 18px;
+	
+}
+#drag_upload_file {
+	width:100%;
+	margin:0 auto;
+}
+#drag_upload_file p {
+	text-align: center;
+}
+#drag_upload_file #selectfile {
+	display: none;
+}
+
+#box__dragndrop{
+background-color: #3fb1a1;
+height: 100px;
+width:50%;
+text-align: center;
+}
+/* .box__uploading,
+.box__success, */
+/* .box__error {
+  display: none;
+} */
+
+/*fin de gif management*/
+/* fin logged normal user*/

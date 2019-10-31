@@ -1,0 +1,17 @@
+App\Entity\Gif:
+    gif_{1..30}:
+        name (unique): '<word()>' 
+        url: '<gif()>' 
+      
+        
+App\Entity\Role:
+    role_{1..2}: 
+        name (unique): '<roleName()>'
+        roleString (unique): '<roleString()>'
+      
+App\Entity\User:
+    user_{1..10}: 
+        username (unique): '<firstName()>'
+        email (unique): '<email()>'
+        password : 'test'
+        role: '@role*'

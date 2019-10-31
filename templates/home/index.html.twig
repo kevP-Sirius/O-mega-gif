@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Page d'accueil{% endblock %}
+
+{% block body %}
+<div id="card-collection">
+
+{% for gif in gifs %}
+
+<iframe class ="card-gif" src="{{ gif.url }}" ></iframe>
+    
+{% endfor %}
+</div>
+{% endblock %}

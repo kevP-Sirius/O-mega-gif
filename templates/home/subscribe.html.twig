@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block titlePage %}<p class="form-title">Formulaire d'inscription</p>{% endblock %}
+
+{% block body %}
+ {% for label, messages in app.flashes %}
+                {% for message in messages %}
+                    <div class="alert alert-{{ label }}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endfor %}
+<div class="signup-form">
+
+{{ form_start(form) }}
+    {{ form_widget(form,{ 'attr': {'class': 'signup-widget'} }) }}
+<div id="buttons-form">
+  <button type="submit" class="btn btn-primary form">s'inscrire</button>
+
+<a href="{{ path('app_login') }}" id ="btn-signin-signup-form" class="btn btn-primary form" >Se connecter</a>
+</div>
+   
+   {{ form_row(form,{ 'attr': {'class': 'signup-form'} }) }}
+{{ form_end(form) }}
+
+
+
+</div>
+
+
+
+
+{% endblock %}

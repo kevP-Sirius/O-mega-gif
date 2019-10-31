@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mon compte{% endblock %}
+ {% if username %}
+        <div class="mb-3">
+            Vous êtes connectez en tant que  {{ username }}, <a href="{{ path('app_logout') }}">Logout</a>
+        </div>
+    {% endif %}
+{% block body %}
+
+{% endblock %}
